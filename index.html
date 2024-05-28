@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Workshop 4 - AP</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is a simple example to explore OSI layers in a simple network">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="functions.js"></script>
+    </head>
+    <body>
+        <h1>Workshop 4 - AP</h1>
+        <h2>Full-Stack Test</h2>
+        <p>Click on the buttons to explore services</p>
+        <div>
+            <button onclick="callMessage()">Get Message</button>
+            <button onclick="callTable()">Get Table</button>
+        </div>
+        <div id="result"></div>
+        <h2>Create a new product</h2> // Agregamos un formulario para crear un nuevo producto
+        <form onsubmit="event.preventDefault(); createProduct();">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="description">Description:</label><br>
+            <input type="text" id="description" name="description"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
